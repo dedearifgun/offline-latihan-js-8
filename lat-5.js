@@ -1,6 +1,3 @@
-//readline
-
-
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -9,10 +6,6 @@ const rl = readline.createInterface({
 });
 
 rl.question('Masukan Nama Anda: ', (nama) => {
-  rl.question('Masukan No HP: ', (nohp) => {
-    console.log(`Terima Kasih ${nama}, sudah input ${nohp}`);
-    rl.close();
-  });
+  console.log(`Terima Kasih ${nama}`);
+  rl.close();
 });
-
-
